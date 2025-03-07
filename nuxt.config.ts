@@ -117,6 +117,7 @@ export default defineNuxtConfig({
         resolvers: [NaiveUiResolver()],
       }),
     ],
+	build: { chunkSizeWarningLimit: 9600 },
     css: {
       preprocessorOptions: {
         scss: {
@@ -124,7 +125,7 @@ export default defineNuxtConfig({
         },
       },
     },
-	build: { chunkSizeWarningLimit: 9600 },
+	
   },
   // https://eslint.nuxt.com
   eslint: {
